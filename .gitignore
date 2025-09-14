@@ -1,0 +1,29 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+*.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Local .env files
+.env
+
+# IDE and OS files
+*.swp
+*.swo
+*.DS_Store
+.idea/
+.vscode/
+*.bak
+*.tmp
+
+.terraform/
+*.tfstate*
+*.lock*
+terraform.tfvars
