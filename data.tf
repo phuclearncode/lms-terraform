@@ -5,7 +5,7 @@
 ###############################################################
 
 # Get the AMI for Ubuntu 22.04
-data "aws_ami" "ubuntu" {
+data "aws_ami" "ubuntu1" {
   most_recent = true
 
   filter {

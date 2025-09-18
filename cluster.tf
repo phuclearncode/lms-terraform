@@ -49,7 +49,7 @@ resource "aws_network_interface" "kubenode" {
 # all nodes in /etc/hosts
 resource "aws_instance" "kubenode" {
   for_each      = toset(local.instances)
-  ami           = data.aws_ami.ubuntu.image_id
+  ami           = data.aws_ami.ubuntu1.image_id
   key_name      = aws_key_pair.kube_kp.key_name
   instance_type = "t3.medium"
   network_interface {
